@@ -1,0 +1,54 @@
+{
+  "name": "http-proxy",
+  "version": "1.18.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/http-party/node-http-proxy.git"
+  },
+  "description": "HTTP proxying for the masses",
+  "author": "Charlie Robbins <charlie.robbins@gmail.com>",
+  "maintainers": [
+    "jcrugzz <jcrugzz@gmail.com>"
+  ],
+  "main": "index.js",
+  "dependencies": {
+    "@sanity/client": "^0.145.0",
+    "@sanity/presence-store": "^0.145.0",
+    "@sanity/reflector-client": "^0.145.0",
+    "body-parser": "^1.19.0",
+    "bufferutil": "^4.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "eventemitter3": "^4.0.0",
+    "express": "^4.17.1",
+    "express-sse": "^0.5.1",
+    "follow-redirects": "^1.0.0",
+    "http-proxy-middleware": "^0.20.0",
+    "node-uuid": "^1.4.8",
+    "requires-port": "^1.0.0",
+    "utf-8-validate": "^5.0.2",
+    "uuid": "^3.3.3",
+    "ws": "^7.2.0"
+  },
+  "devDependencies": {
+    "async": "^3.0.0",
+    "auto-changelog": "^1.15.0",
+    "concat-stream": "^2.0.0",
+    "expect.js": "~0.3.1",
+    "mocha": "^3.5.3",
+    "nyc": "^14.0.0",
+    "semver": "^5.0.3",
+    "socket.io-client": "^2.1.0",
+    "sse": "0.0.8"
+  },
+  "scripts": {
+    "mocha": "mocha test/*-test.js",
+    "test": "nyc --reporter=text --reporter=lcov npm run mocha",
+    "version": "auto-changelog -p && git add CHANGELOG.md",
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "license": "MIT"
+}

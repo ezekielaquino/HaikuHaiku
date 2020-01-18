@@ -1,0 +1,23 @@
+{
+  "root": true,
+  "project": {
+    "name": "Haiku Haiku"
+  },
+  "api": {
+    "projectId": "asjzc1g4",
+    "dataset": "production"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/components",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool"
+  ],
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema.js"
+    }
+  ]
+}

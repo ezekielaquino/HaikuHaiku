@@ -1,0 +1,24 @@
+{
+  "name": "haikuhaiku",
+  "version": "1.0.0",
+  "description": "n/a",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd www && yarn && yarn build",
+    "deploy": "git subtree push --prefix server heroku master "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ezekielaquino/HaikuHaiku.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ezekielaquino/HaikuHaiku/issues"
+  },
+  "homepage": "https://github.com/ezekielaquino/HaikuHaiku#readme",
+  "dependencies": {
+    "gatsby": "^2.18.4",
+    "gatsby-plugin-google-analytics": "^2.1.29"
+  }
+}

@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'mabry-medium';
+  src: url('/fonts/mabry-medium.eot');
+  src: url('/fonts/mabry-medium.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/mabry-medium.woff') format('woff'),
+        url('/fonts/mabry-medium.woff2') format('woff2'),
+        url('/fonts/mabry-medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'XANO-mincho';
+  src: url('/fonts/subset-XANO-mincho.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* --bg: #f5b8d2; */
+  --bg: #B5391D;
+  --bgRgb: 181, 57, 29;
+  --color: rgba(204, 204, 204, 1);
+  --colorRgb: 204, 204, 204;
+}
+
+html {
+  background-color: var(--bg);
+  font-size: 16px;
+}
+
+@media (max-width: 720px) {
+  :root {
+    --color: rgba(230, 230, 230, 1);
+    --colorRgb: 230, 230, 230;
+  }
+
+  html {
+    font-size: 12px;
+  }
+}
+
+body {
+  font-family: 'Arial';
+  color: var(--color);
+  -webkit-font-smoothing: antialiased;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
